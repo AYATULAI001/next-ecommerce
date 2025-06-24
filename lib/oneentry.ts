@@ -19,8 +19,8 @@ export async function setApiClient(): Promise<ReturnType<typeof defineOneEntry>>
     const refreshToken = await retrieveRefreshToken();
 
     apiClient = defineOneEntry(apiUrl, {
-      token: process.env.ONEENTRY_TOKEN,
-      langcode: 'en_US',
+       token: process.env.ONEENTRY_TOKEN,
+      langCode: 'en_US',
       auth: {
         refreshToken: refreshToken || undefined,
         customAuth: false,
