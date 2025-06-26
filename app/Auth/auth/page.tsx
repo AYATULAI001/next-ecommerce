@@ -43,7 +43,7 @@ export default function Page() {
     setError(null);
     const fetchData = isSignUp ? getSignupFormData : getLoginFormData;
     fetchData()
-      .then((data) => setFormData(data))
+      .then((data) => setFormData(Array.isArray(data) ? data : []))
       .catch(() =>
         setError("Failed to load form data. Please try again later.")
       )
