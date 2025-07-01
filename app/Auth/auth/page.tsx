@@ -3,7 +3,7 @@ import { useState, useEffect, FormEvent, ChangeEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ChevronLeft, Loader, Loader2 } from "lucide-react";
+import { ChevronLeft, Loader2 } from "lucide-react";
 import { getSignupFormData, handleSignupSubmit } from "@/action/Auth/auth/signup";
 import { getLoginFormData, handleLoginSubmit } from "@/action/Auth/auth/login";
 import { useRouter, useSearchParams } from "next/navigation";
