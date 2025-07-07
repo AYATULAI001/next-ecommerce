@@ -1,3 +1,4 @@
+
 "use server";
 import { IAttributes } from "oneentry/dist/base/utils";
 import { fetchApiClient } from "@/lib/oneentry";
@@ -45,4 +46,4 @@ export const handleSignupSubmit = async (inputValues: {
 
     throw new Error("Account Creation Failed. Please try again later.");
   }
-}
+};
